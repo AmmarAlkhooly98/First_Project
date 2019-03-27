@@ -12,6 +12,7 @@ $(document).ready(function(){
     var result = randomName(participants);
 
     $('#generaten').on('click',function(myArray){
+       
        $('#whois').html ('')
       return $('#whois').append('<h1>' + randomName(participants) + '</h1>')
      }) 

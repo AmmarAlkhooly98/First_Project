@@ -3,11 +3,6 @@ body{
     background-image: url("http://school298.spb.ru/images/400/DSC100480182.jpg")
 }
 
-h1{
-    text-align: center;
-    color: rgb(17, 153, 216);
-    font-family: Georgia, 'Times New Roman', Times, serif
-}
 
 #start{
     height: 100px;
@@ -41,11 +36,21 @@ h1{
     font-size: 40px
 }
 
-#whois{
+#main{
     font-size: 70px;
     border: 30px;
     color: brown;
 }
+
+h1{
+  text-align: center;
+  font-size: 70px;
+  border: 2px solid black;
+  width: auto;
+  color: brown;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 
 .secondpage{
     text-align: center;
