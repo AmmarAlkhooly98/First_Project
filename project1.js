@@ -8,13 +8,13 @@ function randomName(myArray){
 }
 
 $(document).ready(function(){
+
     
-    var result = randomName(participants);
 
     $('#generaten').on('click',function(myArray){
-       
-       $('#whois').html ('')
-      return $('#whois').append('<h1>' + randomName(participants) + '</h1>')
+
+      $('#whois').html ('')
+      $('#whois').append('<h1>' + randomName(participants) + '</h1>')
      }) 
 
    $('#reload').on('click',function(){
@@ -24,9 +24,22 @@ $(document).ready(function(){
 });
 
 
-  
+function inputs(){
+   var instances={};
 
+   instances.crazy = crazy;
+   
 
+   return instances;
+}
+
+function crazy(){
+
+   if(this.$('#input')==="Crazy"||this.$('#input')==="crazy") {
+      this.$('#generaten').append('<img src="https://thumbs.gfycat.com/CraftyShoddyKid-size_restricted.gif"') 
+   }
+
+}
 
 
 

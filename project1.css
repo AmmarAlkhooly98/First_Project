@@ -1,3 +1,14 @@
+#title{
+  text-align: center;
+  font-size: 70px;
+  width: auto;
+  color: rgb(39, 123, 233);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-shadow: 3px 6px 12px;
+}
+
+
+
 
 body{
     background-image: url("http://school298.spb.ru/images/400/DSC100480182.jpg")
@@ -37,18 +48,19 @@ body{
 }
 
 #main{
-    font-size: 70px;
+    font-size: 80px;
     border: 30px;
     color: brown;
+    box-shadow: 1px 4px 12px;
 }
 
 h1{
   text-align: center;
   font-size: 70px;
-  border: 2px solid black;
   width: auto;
-  color: brown;
+  color: rgb(0, 0, 0);
   font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 
@@ -92,7 +104,7 @@ input{
 
 
 
-#reload{
+#reload {
     height: 40px;
     width: 70px;    
     border-radius: 20px;
