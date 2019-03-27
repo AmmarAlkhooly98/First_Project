@@ -40,6 +40,7 @@ $(document).ready(function(){
 
 function inputs(){
    var instance={};
+
    instance.crazy = crazy;
    instance.stupid = stupid;
    instance.smart = smart;
@@ -53,6 +54,7 @@ function inputs(){
    instance.annoying = annoying;
    instance.handsome = handsome;
    instance.beautiful = beautiful;
+
    return instance;
 }
 
