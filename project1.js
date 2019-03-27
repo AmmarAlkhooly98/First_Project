@@ -1,12 +1,12 @@
 
-var participants = ["Abdulrohman Al-Akrad",'Ahmad Aldarkashli','Ammar Alkhooly','Ayman Alhariri','Besslan','Esraa Ramahi','Hasan Al-Abrash','Mohammad Elokour','Mohammad Jozaa','Yazan Eliwah','Yazan Alnajjar','Yousef (Joe)','Ahmad(coach)','Amer Alkharashgah','Areej Obaid','Basma Al-Tayeh','Canaan','Fatema','Hamza Olimat','Hamzeh Obiedat','Huda Al-Raee','Iman Elokour','Jomana Obaida','Laith Obeidat','Mahmoud','Medina Sheikh','Mohammad Hassan','Moatasem Fayez Alraggad','Oday Abueid','Qusai Alzunaymat','Raed Shhabeddin','Rafat Ahmed','Rawan Akram','Rubah Addad','Sahar','Samia Albess','Sara Bashaireh','Shareef','Wael','Yasser Qasem','Yazan Eliwah','Yousef Alshabah','Kelsey','Mr. Hugh Bosely','bayan Alraqqad','zainab Hammami','Seif Miehair'];                                 
+var participants = ["Abdulrohman Al-Akrad",'Ahmad Aldarkashli','Ammar Alkhooly','Ayman Alhariri','Besslan','Esraa Ramahi','Hasan Al-Abrash','Mohammad Elokour','Mohammad Jozaa','Yazan Eliwah','Yazan Alnajjar','Yousef (Joe)','Ahmad(coach)','Amer Alkharashgah','Areej Obaid','Basma Al-Tayeh','Canaan','Fatema','Hamza Olimat','Hamzeh Obiedat','Huda Al-Raee','Iman Elokour','Jomana Obaida','Laith Obeidat','Mahmoud','Medina Sheikh','Mohammad Hassan','Moatasem Fayez Alraggad','Oday Abueid','Qusai Alzunaymat','Raed Shhabeddin','Rafat Ahmed','Rawan Akram','Rubah Addad','Sahar','Samia Albess','Sara Bashaireh','Shareef','Wael','Yasser Qasem','Yazan Eliwah','Yousef Alshabah','Kelsey','Mr. Hugh Bosely','Bayan Alraqqad','Zainab Hammami','Seif Miehair'];                                 
 
 function randomName(myArray){
    return  myArray[Math.floor(Math.random() * myArray.length)];
 }
 
 $(document).ready(function(){
-   
+
     $('#generaten').on('click',function(myArray){
 
       $('#whois').html ('')
@@ -24,6 +24,13 @@ $(document).ready(function(){
       inputs().annoying();
       inputs().handsome();
       inputs().beautiful();
+      inputs().ugly();
+      inputs().famous();
+      inputs().angry();
+      inputs().sad();
+      inputs().depressed();
+      inputs().happy();
+      inputs().leaving();
      }) 
 
 
@@ -50,6 +57,13 @@ function inputs(){
    instance.annoying = annoying;
    instance.handsome = handsome;
    instance.beautiful = beautiful;
+   instance.ugly = ugly;
+   instance.famous = famous;
+   instance.angry = angry;
+   instance.sad = sad;
+   instance.depressed = depressed;
+   instance.happy = happy;
+   instance.leaving = leaving;
 
    return instance;
 }
@@ -182,4 +196,71 @@ function beautiful() {
 }
 
 
+function ugly() {
+   console.log($('#input').val().toLowerCase())
+      
+   if($('#input').val().toLowerCase()==="ugly") {
+      $('#image').html('')
+      $('#image').append('<img src="http://37.media.tumblr.com/6cd3499a93b220626cbd1e8294ca8871/tumblr_mkudzpdZeC1reyd4yo1_500.gif">') 
+   }
+}
 
+
+function famous() {
+   console.log($('#input').val().toLowerCase())
+      
+   if($('#input').val().toLowerCase()==="famous") {
+      $('#image').html('')
+      $('#image').append('<img src="https://media.giphy.com/media/PWZ5AWxUMaUxO/giphy.gif">') 
+   }
+}
+
+
+function angry() {
+   console.log($('#input').val().toLowerCase())
+      
+   if($('#input').val().toLowerCase()==="angry") {
+      $('#image').html('')
+      $('#image').append('<img src="https://media1.tenor.com/images/dc560a63f5b025d1600ee8164e6848cd/tenor.gif?itemid=3482842">') 
+   }
+}
+
+
+function sad() {
+   console.log($('#input').val().toLowerCase())
+      
+   if($('#input').val().toLowerCase()==="sad") {
+      $('#image').html('')
+      $('#image').append('<img src="https://media.giphy.com/media/l378w70Nxv0alv2qk/giphy.gif">') 
+   }
+}
+
+
+function depressed() {
+   console.log($('#input').val().toLowerCase())
+      
+   if($('#input').val().toLowerCase()==="depressed") {
+      $('#image').html('')
+      $('#image').append('<img src="https://media.tenor.com/images/62e9489a17457146e58eef82b685e924/tenor.gif">') 
+   }
+}
+
+
+function happy() {
+   console.log($('#input').val().toLowerCase())
+      
+   if($('#input').val().toLowerCase()==="happy") {
+      $('#image').html('')
+      $('#image').append('<img src="http://mashable.com/wp-content/uploads/2013/07/crazy-dance.gif">') 
+   }
+}
+
+
+function leaving() {
+   console.log($('#input').val().toLowerCase())
+      
+   if($('#input').val().toLowerCase()==="leaving") {
+      $('#image').html('')
+      $('#image').append('<img src="https://i.kym-cdn.com/photos/images/original/001/029/005/809.gif">') 
+   }
+}
