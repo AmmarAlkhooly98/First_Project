@@ -4,14 +4,12 @@
   width: auto;
   color: rgb(39, 123, 233);
   font-family: Georgia, 'Times New Roman', Times, serif;
-  box-shadow: 3px 6px 12px;
+  box-shadow: 0px 15px 12222px;
 }
 
 
-
-
 body{
-    background-image: url("http://school298.spb.ru/images/400/DSC100480182.jpg")
+  background-image: url("http://school298.spb.ru/images/400/DSC100480182.jpg")
 }
 
 
@@ -25,6 +23,32 @@ body{
     font-size: 60px;
     animation: pulse  1s infinite;
 }
+
+#start span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#start span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+#start:hover span {
+  padding-right: 25px;
+}
+
+#start:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 
 @keyframes pulse {
     0% {
@@ -89,8 +113,34 @@ input{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
     font-size: 45px;
-    animation: pulse  5s infinite;
+    animation: pulse  3s infinite;
 }
+
+#generaten span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#generaten span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#generaten:hover span {
+  padding-right: 25px;
+}
+
+#generaten:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 
 @keyframes pulse {
     0% {
@@ -101,22 +151,54 @@ input{
     }
   }
 
-
-
-
-#reload {
+/* .reload {
     height: 40px;
     width: 70px;    
     border-radius: 20px;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(7, 65, 92);
+} */
+
+
+.reload {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 100px;
+  transition: all 2s;
+  cursor: pointer;
+  margin: 3px;
 }
 
+.reload span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.reload span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
+.reload:hover span {
+  padding-right: 25px;
+}
 
-
+.reload:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 
 

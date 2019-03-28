@@ -31,10 +31,11 @@ $(document).ready(function(){
       inputs().depressed();
       inputs().happy();
       inputs().leaving();
+      inputs().dangerous();
      }) 
 
 
-   $('#reload').on('click',function(){
+   $('.reload').on('click',function(){
       location.reload()
    })
 
@@ -64,6 +65,7 @@ function inputs(){
    instance.depressed = depressed;
    instance.happy = happy;
    instance.leaving = leaving;
+   instance.dangerous = dangerous;
 
    return instance;
 }
@@ -262,5 +264,15 @@ function leaving() {
    if($('#input').val().toLowerCase()==="leaving") {
       $('#image').html('')
       $('#image').append('<img src="https://i.kym-cdn.com/photos/images/original/001/029/005/809.gif">') 
+   }
+}
+
+
+function dangerous() {
+   console.log($('#input').val().toLowerCase())
+      
+   if($('#input').val().toLowerCase()==="dangerous") {
+      $('#image').html('')
+      $('#image').append('<img src="https://media3.giphy.com/media/3ohc11UljvpPKWeNva/giphy.gif">') 
    }
 }
