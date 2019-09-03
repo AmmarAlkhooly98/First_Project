@@ -1,4 +1,4 @@
-var participants1 = [
+var Cohort6 = [
 	'Abdulrohman Al-Akrad',
 	'Ahmad Aldarkashli',
 	'Ammar Alkhooly',
@@ -48,7 +48,29 @@ var participants1 = [
 	'Seif Miehair'
 ];
 
-// var participants2 = ["Yaser","Asmaa","Somaya","Ammar","Basel","Mohammad","Ahmad","Ibrahim"];
+var cohort7 = [
+	'Seif',
+	'Sahar',
+	'Hugh',
+	'Abdulrohman',
+	'Ammar',
+	'Hanan',
+	'Tamara',
+	'Yousef',
+	'Sanaa',
+	'Yara',
+	'Alaa',
+	'Basima',
+	'Ahmad Ajour',
+	'Tasneem',
+	'Mohammad Al-Anaab',
+	'Yasmeen',
+	'Fidaa',
+	'Nahla',
+	'Mohammad Khamaiseh',
+	'Mays',
+	'Doaa'
+];
 
 function randomName(myArray) {
 	var random = Math.floor(Math.random() * myArray.length);
@@ -58,9 +80,9 @@ function randomName(myArray) {
 }
 
 $(document).ready(function() {
-	$('#generaten').on('click', function(myArray) {
+	$('#generaten').on('click', function() {
 		$('#whois').html('');
-		$('#whois').append('<h1>' + randomName(participants1) + '</h1>');
+		$('#whois').append('<h1>' + randomName(cohort7) + '</h1>');
 		inputs().crazy();
 		inputs().stupid();
 		inputs().smart();
@@ -86,6 +108,8 @@ $(document).ready(function() {
 		inputs().esbello();
 		inputs().strong();
 		inputs().cryBaby();
+		inputs().weak();
+		inputs().sleepy();
 	});
 
 	$('.reload').on('click', function() {
@@ -121,6 +145,8 @@ function inputs() {
 	instance.esbello = esbello;
 	instance.strong = strong;
 	instance.cryBaby = cryBaby;
+	instance.weak = weak;
+	instance.sleepy = sleepy;
 
 	return instance;
 }
@@ -337,14 +363,14 @@ function fat() {
 
 	if ($('#input').val().toLowerCase() === 'fat') {
 		$('#image').html('');
-		$('#image').append('<img src="https://i.imgur.com/0ZgDg.gif">');
+		$('#image').append('<img src="https://media2.giphy.com/media/110gqI69qjVAkM/giphy.gif">');
 	}
 }
 
 function esbello() {
 	console.log($('#input').val().toLowerCase());
 
-	if ($('#input').val().toLowerCase() === 'esbello') {
+	if ($('#input').val().toLowerCase() === 'esbello' || $('#input').val().toLowerCase() === 'slow') {
 		$('#image').html('');
 		$('#image').append('<img src="https://i.pinimg.com/originals/d2/02/74/d202746e84116fedc88e6c9cdd87cd13.gif">');
 	}
@@ -365,5 +391,23 @@ function cryBaby() {
 	if ($('#input').val().toLowerCase() === 'cry baby' || $('#input').val().toLowerCase() === 'baby') {
 		$('#image').html('');
 		$('#image').append('<img src="http://www.lequzhai.com/data/out/66/685533.gif">');
+	}
+}
+
+function weak() {
+	console.log($('#input').val().toLowerCase());
+
+	if ($('#input').val().toLowerCase() === 'weak') {
+		$('#image').html('');
+		$('#image').append('<img src="https://i.imgur.com/ltDGzC6.gif">');
+	}
+}
+
+function sleepy() {
+	console.log($('#input').val().toLowerCase());
+
+	if ($('#input').val().toLowerCase() === 'sleepy') {
+		$('#image').html('');
+		$('#image').append('<img src="https://media.tenor.com/images/79b6ad95f6f6b6dc0c57b862fbf456e8/tenor.gif">');
 	}
 }
