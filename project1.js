@@ -207,7 +207,7 @@ function cool() {
 
 	if ($('#input').val().toLowerCase() === 'cool') {
 		$('#image').html('');
-		$('#image').append('<img src="https://media.giphy.com/media/3o6UBhjHobLFgEmrJu/giphy.gif">');
+		$('#image').append('<img src="https://media3.giphy.com/media/3o7bud8Borg7WU9nc4/giphy.gif">');
 	}
 }
 
