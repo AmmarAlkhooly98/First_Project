@@ -69,7 +69,9 @@ var cohort7 = [
 	'Nahla',
 	'Mohammad Khamaiseh',
 	'Mays',
-	'Doaa'
+	'Doaa',
+	'Ben',
+	'Ryan'
 ];
 
 function randomName(myArray) {
