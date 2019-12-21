@@ -49,14 +49,11 @@ var Cohort6 = [
 ];
 
 var cohort7 = [
-	'Seif',
 	'Sahar',
 	'Hugh',
 	'Abdulrohman',
 	'Ammar',
 	'Hanan',
-	'Tamara',
-	'Yousef',
 	'Sanaa',
 	'Yara',
 	'Alaa',
@@ -71,7 +68,24 @@ var cohort7 = [
 	'Mays',
 	'Doaa',
 	'Ben',
-	'Ryan'
+	'Ryan',
+	'Hend',
+	'Kareem',
+	'Ola.z',
+	'Alaa',
+	'Ashjan',
+	'Ali',
+	'Amal',
+	'Dalia',
+	'Fatoom',
+	'Hadeel',
+	'Islam',
+	'Maha',
+	'Nazeeh',
+	'Nouran',
+	'Nour',
+	'Ola.M',
+	'Zinah'
 ];
 
 function randomName(myArray) {
