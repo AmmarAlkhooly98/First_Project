@@ -406,7 +406,7 @@ function cryBaby() {
 
 	if ($('#input').val().toLowerCase() === 'cry baby' || $('#input').val().toLowerCase() === 'baby') {
 		$('#image').html('');
-		$('#image').append('<img src="http://www.lequzhai.com/data/out/66/685533.gif">');
+		$('#image').append('<img src="https://i.pinimg.com/originals/76/f8/bd/76f8bd3914dcf92db7911e03014647d0.gif">');
 	}
 }
 
